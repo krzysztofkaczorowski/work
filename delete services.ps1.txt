@@ -1,0 +1,2 @@
+$services_ctd_prev=Get-WmiObject -ClassName Win32_Service -Filter "Name like '%be_ctd_prev%'"
+$services_ctd_prev|%{$_.Delete()}
